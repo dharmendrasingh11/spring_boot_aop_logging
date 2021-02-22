@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "2735f502-1717-476d-869c-67149dbb43b9",
+		"name": "AopLogging",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/product/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 1,\r\n        \"name\": \"samsung f41\",\r\n        \"price\": 15000\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"name\": \"samsung f31\",\r\n        \"price\": 19000\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/product/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"product",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/product/findAllProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/product/findAllProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"product",
+						"findAllProduct"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
